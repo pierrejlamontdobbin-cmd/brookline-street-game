@@ -34,3 +34,22 @@ html, body {
 #map {
   flex: 1;
 }
+.draggable {
+  background: #fff;
+  padding: 6px;
+  margin-bottom: 6px;
+  border: 1px solid #aaa;
+  cursor: grab;
+}
+
+.draggable:active {
+  cursor: grabbing;
+}
+
+.drop-target {
+  width: 14px;
+  height: 14px;
+  background: rgba(0, 120, 255, 0.6);
+  border: 2px solid white;
+  border-radius: 50%;
+}
