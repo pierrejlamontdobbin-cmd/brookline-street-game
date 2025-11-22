@@ -1,14 +1,12 @@
 html, body {
+  height: 100%;
   margin: 0;
   padding: 0;
-  height: 100%;
-  font-family: sans-serif;
 }
 
 #container {
   display: flex;
   height: 100%;
-  width: 100%;
 }
 
 #sidebar {
@@ -17,7 +15,9 @@ html, body {
   padding: 10px;
   overflow-y: auto;
   border-right: 1px solid #ccc;
+  z-index: 1000; /* <-- critical */
 }
+
 
 #sidebar h2 {
   margin-top: 0;
@@ -33,7 +33,9 @@ html, body {
 
 #map {
   flex: 1;
+  position: relative;
 }
+
 .draggable {
   background: #fff;
   padding: 6px;
