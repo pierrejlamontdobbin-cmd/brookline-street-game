@@ -1,0 +1,36 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: sans-serif;
+}
+
+#container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+#sidebar {
+  width: 260px;
+  background: #f7f7f7;
+  padding: 10px;
+  overflow-y: auto;
+  border-right: 1px solid #ccc;
+}
+
+#sidebar h2 {
+  margin-top: 0;
+}
+
+#street-list div {
+  background: white;
+  padding: 6px;
+  margin-bottom: 6px;
+  border: 1px solid #ccc;
+  cursor: grab;
+}
+
+#map {
+  flex: 1;
+}
